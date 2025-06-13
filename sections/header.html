@@ -437,8 +437,8 @@
             width: calc(100% / 6);
         } 
 
-        header .menu_box > ul > li:first-child > .menu_box-sec_menu > ul > li {
-            width:calc(100% / 4);
+        header .menu_box > ul > li:first-child .menu_box-sec_menu > ul > li {
+            width: calc(100% / 4);
         }
 
         header .menu_box .menu_box-sec_menu > ul > li > a {
@@ -583,6 +583,13 @@
             } else {
                 dropdownContent.addClass('is_active');
                 $this.addClass('rotate');
+            }
+        });
+
+        $(window).click(function(event){
+            if (!$(event.target).closest('.dropBtn').length) {
+                $('.dropdown_content').removeClass('is_active');
+                $('.dropBtn').removeClass('rotate');
             }
         });
     </script>
