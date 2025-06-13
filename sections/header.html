@@ -286,6 +286,11 @@
                     </ul>
                 </div>
             </div>
+            <div class="flex-as-c">
+                <a href="#" class="global_log">
+                    <img src="../sections/imgs/icon_eng.svg" alt="지구">
+                </a>
+            </div>
         </div>
     </header>
 
@@ -548,7 +553,22 @@
             background-size: 12px 12px;
             vertical-align: middle;
         }
+        /* global logo */
+        header .global_log {
+            display: inline-block;
+            width: 20px;
+        }
+
+        header .global_log > img {
+            display: block;
+            width: 100%;
+        }
+
+        header .global_log:hover > img {
+            opacity: .4;
+        }
         /* ----------header end---------- */
+
     </style>
 
     <script>
