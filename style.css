@@ -1,63 +1,81 @@
-/* 노말라이즈 */
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
+        /* 노말라이즈 */
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-/* 라이브러리 */
-.border-red {
-    border: 5px solid red;
-}
+        /* 라이브러리 */
+        .border-red {
+            border: 5px solid red;
+        }
 
-.border-blue {
-    border: 5px solid blue;
-}
+        .border-blue {
+            border: 5px solid blue;
+        }
 
-.border-black {
-    border: 5px solid black;
-}
+        .border-black {
+            border: 5px solid black;
+        }
 
-.border-green {
-    border: 5px solid green;
-}
+        .border-green {
+            border: 5px solid green;
+        }
 
-.flex {
-    display: flex;
-}
+        .flex {
+            display: flex;
+        }
 
-.flex-jc-c {
-    justify-content: center;
-}
+        .flex-jc-c {
+            justify-content: center;
+        }
 
-.flex-ai-c {
-    align-items: center;
-}
+        .flex-ai-c {
+            align-items: center;
+        }
 
-.felx-grow {
-    flex-grow: 1;
-}
+        .flex-as-c {
+            align-self: center;
+        }
 
-.block {
-    display: block;
-}
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
 
-.height-100p {
-    height: 100%;
-}
+        .block {
+            display: block;
+        }
 
-.con {
-    margin-left:auto;
-    margin-right:auto;
-}
+        .height-100p {
+            height: 100%;
+        }
 
-.img-box > img {
-    width: 100%;
-    display: block;
-}
+        .con {
+            margin-left:auto;
+            margin-right:auto;
+        }
 
-/* 커스텀 */
+        .img-box > img {
+            width: 100%;
+            display: block;
+        }
+
+        .icon {
+            background-color:#fff;
+            width:24px;
+            height:24px;
+            display:inline-block;
+            background-image: url(../sections/imgs/img_kabang_220615.png);
+        }
+        
+            /* 커스텀 */
+            .con_min_width {
+            min-width: 1080px;
+        }
+        .con {
+            width: 1080px;
+        }
