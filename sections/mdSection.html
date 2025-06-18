@@ -64,7 +64,7 @@
         </div>
         </div>
         <div>
-            <div class="img-box active-on-visible" data-active-on-visible-diff-y="-200">
+            <div class="img-box active-on-visible can-active-once" data-active-on-visible-diff-y="-200">
                 <img src="../sections/imgs/main-savings.png" alt="">
             </div>
         </div>
@@ -126,7 +126,7 @@
         <div class="md_sec_5_wrap">
             <section class="md_sec md_sec_5 con">
                 <div>
-                    <div class="img-box">
+                    <div class="img-box active-on-visible can-active-once" data-active-on-visible-diff-y="-200">
                         <img src="../sections/imgs/main-foreignRemittance-new.png" alt="">
                     </div>
                 </div>
@@ -336,12 +336,14 @@
 
     .md_sec_2 .img-box > img {
         transform: translateX(20%);
+        visibility: hidden;
         opacity: 0;
-        transition: transform 1s, opacity 1s;
+        transition: all, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
     }
 
     .md_sec_2 .img-box.active > img {
         transform: translateX(0);
+        visibility: visible;
         opacity: 1;
     }
 
@@ -408,6 +410,19 @@
 
     .md_sec_5 .img-box {
         width: 408px;
+    }
+
+    .md_sec_5 .img-box > img {
+        transform: translateY(20%);
+        visibility: hidden;
+        opacity: 0;
+        transition: all, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+    }
+
+    .md_sec_5 .img-box.active > img {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
     }
     /* 섹션 5 끝 */
 
