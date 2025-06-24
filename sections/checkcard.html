@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="con-min-width checkcard_box">
+        <div class="con">
+            <h3>프렌즈 체크카드,<br>내가 고르는 선택의 즐거움</h3>
+            <p>프렌즈 디자인부터 멋스러운 블랙 컬러 카드까지 원하는 디자인과 기능을 선택할 수 있습니다.</p>
+            <div class="btn_box">
+                <a href="#">
+                    카카오뱅크 프렌즈 체크카드
+                    <img src="../sections/imgs/home_arr.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+        /* 노말라이즈 */
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* 라이브러리 */
+        .border-red {
+            border: 5px solid red;
+        }
+
+        .border-blue {
+            border: 5px solid blue;
+        }
+
+        .border-black {
+            border: 5px solid black;
+        }
+
+        .border-green {
+            border: 5px solid green;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-jc-c {
+            justify-content: center;
+        }
+
+        .flex-ai-c {
+            align-items: center;
+        }
+
+        .flex-as-c {
+            align-self: center;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .height-100p {
+            height: 100%;
+        }
+
+        .con {
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        .img-box > img {
+            width: 100%;
+            display: block;
+        }
+        .icon {
+            background-color:#fff;
+            width:24px;
+            height:24px;
+            display:block;
+            background-image: url(../sections/imgs/img_kabang_220615.png);
+        }
+        .relative {
+            position: relative;
+        }
+            /* 커스텀 */
+            .con_min_width {
+            min-width: 1080px;
+        }
+        .con {
+            width: 1080px;
+        }
+/* ---------- checkcard start ---------- */
+
+        .checkcard_box {
+            padding-top: 150px;
+        }
+
+        .checkcard_box h3 {
+            font-size:40px;
+            line-height: 1.35;
+            text-align: center;
+            margin: 0;
+        }
+
+        .checkcard_box p {
+            font-size: 15px;
+            margin-top: 24px;
+            line-height: 1.7;
+            color: #666;
+            text-align: center;
+        }
+
+        .checkcard_box .btn_box {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .checkcard_box .btn_box a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:258px;
+            height:56px;
+            background-color: #f6f6f6;
+            font-size: 16px;
+            line-height: 56px;
+            color: #333;
+            border-radius: 10px;
+        }
+
+        .checkcard_box .btn_box a:hover {
+            text-decoration: underline;
+        }
+
+        .checkcard_box .btn_box a img {
+            width: 6px;
+            height: 9px;
+            margin: 3px 0 0 8px;
+            display: block;
+        }
+
+/* ----------- checkcard end ----------- */
+    </style>
+</html>
