@@ -50,6 +50,23 @@
                         <div class="img-box"><img src="../sections/imgs/card-5.png" alt=""></div>
                     </div>
                 </div>
+
+                <div class="slick">
+                    <div class="item">
+                        <div class="img-box"><img src="../sections/imgs/card-1.png" alt=""></div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box"><img src="../sections/imgs/card-2.png" alt=""></div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box"><img src="../sections/imgs/card-3.png" alt=""></div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box"><img src="../sections/imgs/card-4.png" alt=""></div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box"><img src="../sections/imgs/card-5.png" alt=""></div>
+                    </div>
             </div>
         </div>
     </div>
@@ -210,13 +227,14 @@
             top: 50%;
             right: calc(100% + 150px);
             transform: translateY(-50%);
+            right: calc(100% + 150px);
             cursor: pointer;
             z-index: 1;
         }
 
         .checkcard_box .slider_box .arrows div:last-child {
-            left: calc(100% + 150px);
             right: auto;
+            left: calc(100% + 150px);
         }
 
         .checkcard_box .slider_box .arrows div:active {
@@ -227,7 +245,7 @@
     </style>
     <script>
         function SliderBox1__init() {
-        $('.slider_box > .slick').slick({
+            $('.slider_box > .slick').slick({
             dots:false,
             autoplay: false,
             slidesToShow: 3,
@@ -235,11 +253,11 @@
             centerMode:true,
             centerPadding:0,
             arrows:true,
-            prevArrow: ".slider_box > .arrow > .btn_arrow_left",
-            nextArrow: ".slider_box > .arrow > .btn_arrow_right"
-        });
-    }
-
-    SliderBox1__init();
+            prevArrow: ".slider_box > .arrows > .btn_arrow_left",
+            nextArrow: ".slider_box > .arrows > .btn_arrow_right"
+            });
+        }
+    
+        SliderBox1__init();
     </script>
 </html>
